@@ -5,7 +5,7 @@
 
     <body>
         <script>
-          function computerPlay() {
+         function computerPlay() {
               switch(Math.floor(Math.random()*3)) {
                   case 0:
                   return "rock";
@@ -24,18 +24,19 @@
                   return "It's a tie!";
               } else if (playerSelection === "rock" && computerSelection === "scissors") {
                   return "You win!";
-              } else { 
-                  return "You lose! Rock beats Scissors!";
-              } if (playerSelection === "paper" && computerSelection === "rock") {
-                  return "You win";
-              } else {
-                  return "You lose! Paper beats Rock!";
-              } if (playerSelection === "scissors" && computerSelection === "paper") {
+              } else if (playerSelection === "rock" && computerSelection === "paper") {
+                  return "You lose! Paper beats rock!";
+              } else if (playerSelection === "paper" && computerSelection === "rock") {
                   return "You win!";
-              } else {
-                  return "You lose! Scissors beats Paper!"
+              } else if (playerSelection === "paper" && computerSelection === "scissors") {
+                  return "You lose! Scissors beats paper!";
+              } else if (playerSelection === "scissors" && computerSelection === "paper") {
+                  return "You win!"
+              } else if (playerSelection === "scissors" && computerSelection === "rock") {
+                  return "You lose! Rock beats scissors!";
               }
-          }
+            }
+
         </script>
     </body>
 </html>
