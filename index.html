@@ -6,10 +6,6 @@
 </head>
 <body>
     <script>
-        let roundNum = 0;
-
-/*This will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’. 
-  We’ll use this function in the game to make the computer’s play.*/
         function computerPlay() {
             switch(Math.floor(Math.random()*3)) { 
             case 0:
@@ -24,7 +20,6 @@
         }
     }
 
-//This function plays a single round of Rock Paper Scissors.
         function playRound(playerSelection, computerSelection) {
 
             if (playerSelection === computerSelection) {
@@ -39,16 +34,13 @@
                 return `You lose! "${computerSelection}"  beats "${playerSelection}".`;
         }
     }
-
-//This function will play a 5 round game & keep the score & report a winner or loser at the end.   
+   
         function game() {
         let playerScore = 0;
         let computerScore = 0;
 
         for (let i=0; i < 5; i++) {
 
-/*To get input from the player; made it case insensitive 
-  so users can input rock, ROCK, RocK or any other variation.*/
         const playerSelection = prompt('Choose: Rock, Paper, or Scissors?').toLowerCase();
         const computerSelection = computerPlay();
         console.log(`Computer played "${computerSelection}"`);
@@ -70,7 +62,7 @@
         console.log("You won the game!");
     } 
         else {
-        console.log("You are tied! Refresh the page and play again.");
+        console.log("It's a tie game!");
     }
   }
 
