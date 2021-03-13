@@ -8,7 +8,7 @@
 5. Write a NEW function called game(). Use the previous function inside of this one to play a 5 round game that keeps score and reports a winner or loser at the end. 
 6. Use prompt() to get input from the user.
 
-"index.html"
+"game.js"
 
 1. Go back to your “Rock Paper Scissors” game from a previous lesson and give it a simple UI so that the player can play the game by clicking on buttons rather than          typing their answer in a prompt.
 2. Copy your original code into a new file so you don’t lose it.
