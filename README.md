@@ -1,3 +1,5 @@
+Preview: https://m0n411111.github.io/rock-paper-scissors/
+
 "console-game"
 
 1. Start a new Git repo for your project.
